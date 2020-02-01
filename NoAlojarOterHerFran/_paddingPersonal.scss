@@ -1,0 +1,17 @@
+@mixin paddingP($separacion) {
+
+    padding-top: $separacion;
+    
+}
+
+section {
+
+    @include paddingP(40px);
+
+}
+
+footer {
+
+    @include paddingP(40px);
+
+}

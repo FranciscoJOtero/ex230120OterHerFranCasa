@@ -1,0 +1,155 @@
+@import 'paddingPersonal.scss';
+%bordeCabecera {
+
+    border: 2px solid blueviolet;
+
+}
+
+%bordeAzul {
+
+    border: 2px solid blue;
+
+}
+
+@mixin bordeVerd($color,$grosor) {
+
+    border: $grosor solid $color;
+    
+}
+
+.cabecera {
+
+    display: grid;
+    width: 99%;
+    min-height: 200px;
+    grid-template-columns: 70% 30%;
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    @extend %bordeCabecera;
+    
+    &__title {
+
+        color: royalblue;
+        text-align: center;
+    }
+
+    &__img {
+
+        width: 100%;
+        height: auto;
+        text-align: center;
+        margin: 0;
+    }
+
+    &__licencia {
+
+        width: 100%;
+        height: auto;
+        padding-top: 15px;
+        text-align: center;
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
+
+}
+
+.seccion {
+
+    display: grid;
+    width: 99%;
+    min-height: 500px;
+    grid-template-columns: 60% 40%;
+    grid-column-gap: 2px;
+    box-sizing: border-box;
+
+    &__Oter_Her_Fran_Contenedor1ConBordeAzul {
+
+        @extend %bordeAzul;
+
+    }
+
+    &__Oter_Her_Fran_Contenedor2ConBordeVerde {
+
+        @include bordeVerd(green,2px);
+
+
+    }
+
+    &__boton {
+
+        background-image: url("../img/Recurso5.png");
+        background-repeat: no-repeat;
+        height:200px;
+        width:200px;
+        background-position:center;
+        text-align: center;
+        margin: 120px 170px;
+
+    }
+
+    &__parrafo {
+
+        text-align: center;
+        font-size: 1.2rem;
+
+    }
+
+}
+
+.pie {
+
+    display: grid;
+    width: 99%;
+    min-height: 300px;
+    grid-template-columns: 25% 50% 25%;
+    grid-column-gap: 2px;
+    box-sizing: border-box;
+    
+    &__parte1 {
+        
+        border: 2px solid black;
+    }
+
+    &__boton {
+
+        background-image: url("../img/Recurso6.png");
+        background-repeat: no-repeat;
+        height:200px;
+        width:200px;
+        background-position:center;
+        text-align: center;
+        margin: 50px;
+
+    }
+
+    &__parte2 {
+
+        border: 2px solid blue;
+        text-align: center;
+
+
+    }
+
+    &__parte3 {
+
+        border: 2px solid red;
+        text-align: center;
+
+    }
+
+}
+
+a {
+    display: block;
+    margin-top: 130px;
+}
+
+audio {
+
+    margin-top: 100px;
+
+}
+
