@@ -5,6 +5,10 @@
   border: 2px solid #000000;
 }
 
+.contenedorGrid .elemento3, .contenedorGrid .elemento2, .contenedorGrid .elemento1 {
+  border: 2px solid white;
+}
+
 body {
   margin: 0;
   background-color: #0f2324;
@@ -99,6 +103,33 @@ body {
 
 #Recurso {
   display: none;
+}
+
+.contenedorGrid {
+  display: grid;
+  position: sticky;
+  margin-top: 0;
+  width: 100%;
+  min-height: 300px;
+  grid-template-columns: 40% 30% 30%;
+  box-sizing: border-box;
+  margin-top: 10px;
+}
+.contenedorGrid .elemento1 {
+  background-color: #f5aaf5;
+  text-align: center;
+}
+.contenedorGrid .elemento1 .geo {
+  background-image: url("../img/Recurso11.jpg");
+  background-repeat: no-repeat;
+  padding: 40px;
+  margin-top: 20%;
+}
+.contenedorGrid .elemento2 {
+  background-color: #b7e261;
+}
+.contenedorGrid .elemento3 {
+  background-color: #f89e8e;
 }
 
 /*# sourceMappingURL=Oter_Her_Fran_style2.css.map */
